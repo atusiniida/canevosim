@@ -1,0 +1,4 @@
+main.o: main.cpp tumor.h simulator.h random.h
+tumor.o: tumor.cpp tumor.h
+simulator.o: simulator.cpp simulator.h tumor.h random.h
+random.o: random.cpp MT.h random.h

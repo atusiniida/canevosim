@@ -1,0 +1,5 @@
+bep.o: bep.cpp tumor.h mutationcontainer.h random.h statuscontainer.h
+tumor.o: tumor.cpp tumor.h mutationcontainer.h random.h statuscontainer.h
+mutationcontainer.o: mutationcontainer.cpp mutationcontainer.h random.h
+statuscontainer.o: statuscontainer.cpp statuscontainer.h
+random.o: random.cpp random.h

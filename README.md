@@ -1,4 +1,4 @@
-)  ## Cancer Evolution Simulator
+# Cancer Evolution Simulator
 This simulator is developed for conducting our simulation study about cancer evolution, the details of which are described in our [mauscript](https://www.biorxiv.org/content/10.1101/762997v1) and [website](https://www.hgc.jp/~aniida/canevosim/index.html).
 
 ##  1. requirement
@@ -33,12 +33,12 @@ option:  # The value in the brackets indicates the default value.\
 　-p initialPopulationSize(1)  # Number of cells at the start of simulation\
 　-s tumorSampleSize(1000)  # Number of cells sampled for generating the output\
 　-F mutationFrequencyCutoff(0.000000)  # Clones whose frequency are less than this values are discarded for saving memory space.\
-　-k populationSizeChangeCutoff (0.000000, if positive, print time course data)  # Evolutionary snapshots are generated at every time point when the fold increase of the population size exceeds this value.\
+　-k populationSizeChangeCutoff (0.000000, if positive, print time course data)  # For specifying time points for obtaining evolutionary snapshots\
 　-K carryingCapacity(inf)  # Corresponding to <em>m</em><sub><em>e</em></sub>\
 　-S symmetricReplicationProbablity (1.000000)  # Corresponding to <em>s</em>\
 　-e differentiatedCellDeathRate (0.010000)  # Corresponding to <em>d</em><sub>0</sub><sup>d</sup>\
 　-i infinitizingCarryingCapacityProbability (0.000000)  # Corresponding to <em>p</em><sub><em>c</em></sub>\
-　-o outfilePrefix(out)  # Prefix of the outfiles\
+　-o outfilePrefix(out)  # Prefix of the outfiles
 
 ##  3. output
 you obtain the following 5 files:

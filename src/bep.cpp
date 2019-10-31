@@ -32,16 +32,15 @@ string outfilePrefix = "out";
 
 	void printUsage()
 {
-    printf("usage: python bep.py [option]\n");
-		printf("option:\n");
+    printf("Usage:\n");
     printf("  -r baseReplicationRate(%f)\n", baseReplicationRate);
     printf("  -d baseDeathRate(%f)\n", baseDeathRate);
     printf("  -c driverMutationContainerSize(%d)\n", driverMutationContainerSize);
 	printf("  -g driverGenomeSize(%d)\n", driverGenomeSize);
 	printf("  -m driverMutationRate(%f)\n", driverMutationRate);
-	printf("  -C neutralMutationContainerSize(%d)\n", passengerMutationContainerSize);
-	printf("  -G neutralGenomeSize(%d)\n", passengerGenomeSize);
-	printf("  -M neutralMutationRate(%f)\n", passengerMutationRate);
+	printf("  -C passengerMutationContainerSize(%d)\n", passengerMutationContainerSize);
+	printf("  -G passengerGenomeSize(%d)\n", passengerGenomeSize);
+	printf("  -M passengerMutationRate(%f)\n", passengerMutationRate);
 	printf("  -f replicationRateIncrease(%f)\n", replicationRateIncrease);
 	printf("  -D deathRateDecrease(%f)\n", deathRateDecrease);
 	printf("  -T maxTime(%d)\n", maxTime);

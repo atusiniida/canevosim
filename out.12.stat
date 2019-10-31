@@ -1,0 +1,14 @@
+growthTime	4.86070924451777
+populationSize	3.61468634228201
+mutationCountPerCell	4.042
+clonalMutationCount	0
+subClonalMutationCount	209
+totalMutationCount	209
+clonalMutationProportion	0
+subClonalMutationProportion	1
+branchedEvolution0.05	1
+branchedEvolution0.1	1
+shannonDiversity0.05	1.82094220837377
+simpsonDiversity0.05	0.787396
+shannonDiversity0.1	1.6387762804431
+simpsonDiversity0.1	0.769166

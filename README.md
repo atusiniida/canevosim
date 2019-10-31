@@ -10,7 +10,7 @@ This simulator is developed for conducting our simulation study about cancer evo
 
 `git clone  https://github.com/atusiniida/canevosim.git`\
 `cd canevosim/src`\
-(modify Makefile for calling an adequate  C++11 compiler, if necessary.)\
+(Modify Makefile for calling an adequate  C++11 compiler, if necessary.)\
 `make` \
 `cd ../`\
 `python python/canevosim.py -h`
@@ -18,7 +18,7 @@ This simulator is developed for conducting our simulation study about cancer evo
 ##  3. usage
 
 usage: python bep.py [option]\
-option:  # The value in the brackets indicates the default value.\
+option:  # the value in the brackets indicates the default value.\
 　-r baseReplicationRate(0.000100)  # corresponding to <em>g</em><sub><em>0</em></sub> in our [mauscript](https://www.biorxiv.org/content/10.1101/762997v1)\
 　-d baseDeathRate(0.000000)  # corresponding to <em>d</em><sub><em>0</em></sub> \
 　-c driverMutationContainerSize(5)  # corresponding to <em>N</em><sub><em>d</em></sub> \
@@ -41,12 +41,12 @@ option:  # The value in the brackets indicates the default value.\
 　-o outfilePrefix(out)  # prefix of the result files
 
 ##  3. output
-you obtain the following 5 result files:
+You obtain the following 5 result files:
 - [outfilePrefix].dr # each line contains driver mutations in each cell.
 - [outfilePrefix].ps #  each line contains  neutral  mutations in each cell.
 - [outfilePrefix].prm  # containing  parameter settings
 - [outfilePrefix].stat # containing summary statistics
-- [outfilePrefix].pdf # visualizing the mutation profile matrix 
+- [outfilePrefix].pdf # visualizing the mutation profile matrix
 
 When symmetricReplicationProbablity  < 1, you additionally obtain the following file:
 -  [outfilePrefix].df  # each line contains  differentiation status of each cell.

@@ -1,5 +1,5 @@
 # Cancer Evolution Simulator
-This simulator is developed for conducting our simulation study about cancer evolution, the details of which are described in our [mauscript](https://www.biorxiv.org/content/10.1101/762997v1) and [website](https://www.hgc.jp/~aniida/canevosim/index.html).
+This simulator is developed for conducting our simulation study about cancer evolution, the details of which are described in our [manuscript](https://www.biorxiv.org/content/10.1101/762997v1) and [website](https://www.hgc.jp/~aniida/canevosim/index.html).
 
 ##  1. requirement
 - C++11 compiler
@@ -15,7 +15,7 @@ This simulator is developed for conducting our simulation study about cancer evo
 `cd ../`\
 `python python/canevosim.py -h`
 
-##  3. usege
+##  3. usage
 
 usage: python bep.py [option]\
 option:  # The value in the brackets indicates the default value.\
@@ -38,21 +38,20 @@ option:  # The value in the brackets indicates the default value.\
 　-S symmetricReplicationProbablity (1.000000)  # Corresponding to <em>s</em>\
 　-e differentiatedCellDeathRate (0.010000)  # Corresponding to <em>d</em><sub>0</sub><sup>d</sup>\
 　-i infinitizingCarryingCapacityProbability (0.000000)  # Corresponding to <em>p</em><sub><em>c</em></sub>\
-　-o outfilePrefix(out)  # Prefix of the outfiles
+　-o outfilePrefix(out)  # Prefix of the result files
 
 ##  3. output
-you obtain the following 5 files:
+you obtain the following 5 result files:
 - [outfilePrefix].dr # Each line contains driver mutations in each cell.
 - [outfilePrefix].ps #  Each line contains  neutral  mutations in each cell.
 - [outfilePrefix].prm  # containing  parameter settings
-- [outfilePrefix].stat # containing summary statistics 
+- [outfilePrefix].stat # containing summary statistics
 - [outfilePrefix].pdf # visualizing the mutation profile matrix 
 
-When symmetricReplicationProbablity  < 1, you additionaly obtain the following file:
--  [outfilePrefix].df  # Each line contains  differenciation status of  each cell . 
+When symmetricReplicationProbablity  < 1, you additionally obtain the following file:
+-  [outfilePrefix].df  # Each line contains  differentiation status of  each cell .
 
-When infinitizingCarryingCapacityProbability  > 0, you additionaly obtain the following file:
+When infinitizingCarryingCapacityProbability  > 0, you additionally obtain the following file:
 -  [outfilePrefix].ic  # Each line contains  explosive driver mutations infinitizing carrying capacity  in each cell.
 
-When  populationSizeChangeCutoff  > 0, you additionaly obtain  more files generated as evolutionary snapshots at every time point when the fold increase of the population size exceeds the opulationSizeChangeCutoff value.
-
+When  populationSizeChangeCutoff  > 0, you additionally obtain  more files generated as evolutionary snapshots at every time point when the fold increase of the population size exceeds the populationSizeChangeCutoff value.

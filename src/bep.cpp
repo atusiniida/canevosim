@@ -32,7 +32,8 @@ string outfilePrefix = "out";
 
 	void printUsage()
 {
-    printf("Usage:\n");
+    printf("usage: python bep.py [option]\n");
+		printf("option:\n");
     printf("  -r baseReplicationRate(%f)\n", baseReplicationRate);
     printf("  -d baseDeathRate(%f)\n", baseDeathRate);
     printf("  -c driverMutationContainerSize(%d)\n", driverMutationContainerSize);

@@ -54,4 +54,4 @@ When symmetricReplicationProbablity  < 1, you additionally obtain the following 
 When infinitizingCarryingCapacityProbability  > 0, you additionally obtain the following file:
 -  [outfilePrefix].ic  # each line contains  explosive driver mutations infinitizing carrying capacity in each cell.
 
-When  populationSizeChangeCutoff  > 0, you additionally obtain  more files generated as evolutionary snapshots at every time point when the fold increase of the population size exceeds the populationSizeChangeCutoff value.
+When  populationSizeChangeCutoff  > 0, you obtain  more files generated as evolutionary snapshots at every time point when the fold increase of the population size exceeds the populationSizeChangeCutoff value.

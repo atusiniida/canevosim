@@ -3,7 +3,7 @@ This simulator is developed for conducting our simulation study about cancer evo
 
 ##  1. requirement
 - C++11 compiler
-- Python 2.7 and the following library: numpy
+- Python 2.7
 - R 3.6 and the following libraries: gplots, vegan and RColorBrewer
 
 ##  2. installation

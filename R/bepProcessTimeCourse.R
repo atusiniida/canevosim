@@ -18,8 +18,7 @@ if(!any(objects()=="png")){
 if(!any(objects()=="jpeg")){
   jpeg<-F
 }
-pdf<-T
-png<-T
+
 
 ###################
 #read data
